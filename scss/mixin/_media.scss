@@ -1,0 +1,32 @@
+@mixin sm {
+  @media (min-width: 425px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin l {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin four_k {
+  @media (min-width: 2560px) {
+    @content;
+  }
+}
