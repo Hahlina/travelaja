@@ -1,0 +1,61 @@
+.header {
+  height: 60px;
+  @include between;
+  align-items: center;
+  padding: 0 clamp(0.938rem, -2.344rem + 6.84vw, 3.125rem);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 19px;
+}
+.logo {
+  @include font(33px, 400, 120);
+  color: $white;
+}
+.nav {
+  display: none;
+  ul {
+    display: flex;
+    gap: clamp(1.25rem, -0.625rem + 3.91vw, 2.5rem);
+    li {
+      @include flex-center;
+    }
+  }
+  a {
+    color: $white;
+    @include font(16px, 400, 180);
+    &:hover {
+      font-weight: 700;
+    }
+  }
+  @include md {
+    display: block;
+  }
+}
+.lang {
+  @include flex-center;
+  a {
+    color: $white;
+    @include flex-center;
+    @include font(16px, 700, 180);
+  }
+  a:before {
+    content: "";
+    display: inline-block;
+    @include box(18px);
+    border-radius: 50%;
+    background: url("./img/icons/poland.svg");
+    @include cover-background;
+    margin-right: 10px;
+  }
+  span {
+    display: block;
+    @include box(9px);
+    margin-left: 10px;
+    transform: rotate(45deg);
+    border-bottom: 2px solid $white;
+    border-right: 2px solid $white;
+    position: relative;
+    top: -2px;
+  }
+}
