@@ -1,0 +1,80 @@
+.section_testimonial {
+  margin-top: clamp(1.25rem, -0.417rem + 8.33vw, 6.25rem);
+  color: $black;
+  h5 {
+    color: $darkgreen;
+    @include font(16px, 700, 180);
+    text-align: center;
+  }
+  h2 {
+    @include font(clamp(1.25rem, 1.083rem + 0.83vw, 1.75rem), 700, 180);
+    text-align: center;
+    margin-bottom: clamp(0.938rem, 0.208rem + 3.65vw, 3.125rem);
+  }
+
+  .response {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .item_response {
+    width: clamp(18.75rem, 17.083rem + 8.33vw, 23.75rem);
+    height: clamp(10.188rem, 9.271rem + 4.58vw, 12.938rem);
+    padding: 10px;
+    @include flex-column;
+    justify-content: space-between;
+    transition: background 0.5s linear;
+    &:nth-child(1) {
+      .photo {
+        background: url("/img/home/people_icons/1.svg");
+      }
+    }
+    &:nth-child(2) {
+      .photo {
+        background: url("/img/home/people_icons/2.svg");
+      }
+    }
+    &:nth-child(3) {
+      .photo {
+        background: url("/img/home/people_icons/3.svg");
+      }
+    }
+    &:nth-child(4) {
+      .photo {
+        background: url("/img/home/people_icons/4.svg");
+      }
+    }
+    &:nth-child(5) {
+      .photo {
+        background: url("/img/home/people_icons/5.svg");
+      }
+    }
+    &:nth-child(6) {
+      .photo {
+        background: url("/img/home/people_icons/6.svg");
+      }
+    }
+    &:hover {
+      background-color: $green;
+      cursor: pointer;
+    }
+  }
+
+  .human {
+    @include flex-center-vert;
+    gap: 10px;
+    p {
+      @include font(clamp(1rem, 0.854rem + 0.73vw, 1.438rem), 700, 120);
+    }
+  }
+  .photo {
+    @include box(50px);
+    @include cover-background;
+  }
+
+  .text_response {
+    @include font(clamp(0.75rem, 0.667rem + 0.42vw, 1rem), 400, 180);
+    margin-bottom: 10px;
+  }
+}

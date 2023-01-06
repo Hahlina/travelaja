@@ -1,6 +1,5 @@
 .section_travelersPoint {
   margin-top: clamp(1.25rem, -0.417rem + 8.33vw, 6.25rem);
-  display: grid;
   padding: 0 clamp(0rem, -1.042rem + 5.21vw, 3.125rem);
   @include lg {
     grid-template-columns: 590px 1fr;
