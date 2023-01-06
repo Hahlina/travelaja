@@ -1,0 +1,88 @@
+.section_travelersPoint {
+  margin-top: 100px;
+  display: grid;
+  padding: 0 clamp(0rem, -1.042rem + 5.21vw, 3.125rem);
+  @include lg {
+    grid-template-columns: 590px 1fr;
+  }
+
+  .photo_block {
+    display: flex;
+    justify-content: center;
+  }
+  .item_div {
+    position: relative;
+    width: clamp(20rem, 0.714rem + 96.43vw, 36.875rem);
+    padding: 0 10px;
+    @include lg {
+      height: 450px;
+      padding: 0;
+    }
+  }
+
+  .item_1 {
+    width: clamp(10.875rem, 3.732rem + 35.71vw, 17.125rem);
+    height: clamp(21.75rem, 14.607rem + 35.71vw, 28rem);
+    background: url("./img/home/travels_point/img_1.png");
+  }
+  .item_2 {
+    width: clamp(8.438rem, 2.723rem + 28.57vw, 13.438rem);
+    height: clamp(14.5rem, 7.357rem + 35.71vw, 20.75rem);
+    background: url("./img/home/travels_point/img_2.png");
+    border-left: clamp(0.313rem, 0.104rem + 1.04vw, 0.938rem) solid $white; //!15px
+    position: absolute;
+    bottom: 0;
+    left: 43%;
+  }
+  .item_3 {
+    width: clamp(8.125rem, 3.625rem + 22.5vw, 12.063rem);
+    height: clamp(13.75rem, 6.607rem + 35.71vw, 20rem);
+    border-left: clamp(0.313rem, 0.146rem + 0.83vw, 0.813rem) solid $white; //!13
+    border-bottom: clamp(0.313rem, 0.104rem + 1.04vw, 0.938rem) solid $white; //!15
+    background: url("./img/home/travels_point/img_3.png");
+    position: absolute;
+    right: 10px;
+    top: 0;
+  }
+  .item {
+    border-radius: $borderRadius_95;
+    @include cover-background;
+  }
+  .text_block {
+    @include flex-column;
+    gap: 20px;
+    padding: 0 10px;
+    color: $black;
+    h5 {
+      margin-top: 10px;
+      color: $darkgreen;
+      @include font(16px, 700, 180);
+      text-align: center;
+      @include lg {
+        text-align: left;
+      }
+    }
+    h2 {
+      @include font(clamp(1.25rem, 1.083rem + 0.83vw, 1.75rem), 700, 120);
+    }
+    p {
+      @include font(clamp(0.625rem, 0.5rem + 0.63vw, 1rem), 400, 180);
+    }
+  }
+  .statistic {
+    padding-top: clamp(0rem, -0.417rem + 2.08vw, 1.25rem);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    p:first-child {
+      color: $darkgreen;
+      @include font(clamp(1.25rem, 1.083rem + 0.83vw, 1.75rem), 700, 120);
+      margin-bottom: 5px;
+    }
+  }
+  .column {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+}
