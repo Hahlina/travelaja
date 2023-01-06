@@ -1,0 +1,13 @@
+@mixin icon_input {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("https://api.iconify.design/material-symbols/location-on-outline.svg");
+    @include cover-background;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+}

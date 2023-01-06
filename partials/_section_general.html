@@ -9,6 +9,7 @@
   </div>
   <div class="search">
     <div>
+      <span class="icon_input"></span>
       <iconify-icon icon="carbon:location-filled" class="svg"></iconify-icon>
       <input
         type="location"
@@ -16,20 +17,28 @@
         class="lacation"
       />
     </div>
-    <input
-      placeholder="Date of stay"
-      class="date"
-      type="text"
-      onfocus="(this.type='date')"
-      onblur="(this.type='text')"
-    />
+    <div>
+      <span class="icon_input"></span>
+      <input
+        placeholder="Date of stay"
+        class="date"
+        type="text"
+        onfocus="(this.type='date')"
+        onblur="(this.type='text')"
+      />
+    </div>
 
-    <input type="number" placeholder="Person" class="person" />
-    <button class="btn_general">
-      <a href="#"
-        >Find Trip Now
-        <img src="./img/icons/search.svg" alt="" />
-      </a>
-    </button>
+    <div>
+      <span class="icon_input"></span>
+      <input type="number" placeholder="Person" class="person" />
+    </div>
+    <div>
+      <button class="btn_general">
+        <a href="#"
+          >Find Trip Now
+          <img src="./img/icons/search.svg" alt="" />
+        </a>
+      </button>
+    </div>
   </div>
 </section>

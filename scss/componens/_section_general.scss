@@ -19,54 +19,165 @@
   }
 }
 .search {
-  padding: 9px 11px;
-  @include md {
-    width: 780px;
-    height: 67px;
-  }
-
-  border-radius: $borderRadius_8;
-  border: 1px solid $black;
-  overflow: hidden;
-  background-color: $white;
-  @include between;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   .svg {
     margin: 0 10px;
+    display: none;
   }
+
+  @include md {
+    padding: 9px 11px;
+    width: clamp(43.75rem, -9.583rem + 111.11vw, 48.75rem); //768
+    height: 67px; //67
+    @include between;
+    flex-direction: row;
+    background-color: $white;
+    border: 1px solid $black;
+    border-radius: $borderRadius_8;
+    .svg {
+      display: block;
+    }
+    div:first-child {
+      @include flex-center;
+    }
+  }
+
   .lacation {
-    height: 100%;
-    width: 167px;
-    padding-left: 10px;
+    width: 250px;
+    @include md {
+      width: 167px;
+    }
+    .icon_input {
+      @extend .icon_input;
+    }
   }
+
   .date {
-    border-left: 1px solid $black;
-    height: 100%;
-    padding-left: 10px;
-    width: 118px;
+    width: 200px;
+    @include md {
+      width: 118px;
+      border-left: 1px solid $black;
+    }
   }
   .person {
-    border-left: 1px solid $black;
-    height: 100%;
-    padding-left: 10px;
-    width: 82px;
+    width: 150px;
+    @include md {
+      width: 118px;
+      border-left: 1px solid $black;
+      width: 82px;
+      border-left: 1px solid $black;
+    }
   }
   input::placeholder {
     color: $black;
   }
+  div:nth-child(1) {
+    position: relative;
+    .icon_input {
+      @include icon_input;
+    }
+  }
+  div:nth-child(2) {
+    position: relative;
+    .icon_input {
+      @include icon_input;
+      &:before {
+        background: url("https://api.iconify.design/material-symbols/date-range.svg");
+      }
+    }
+  }
+  div:nth-child(3) {
+    position: relative;
+    .icon_input {
+      @include icon_input;
+      &:before {
+        background: url("https://api.iconify.design/material-symbols/person.svg");
+      }
+    }
+  }
+  @include md {
+    div:nth-child(even),
+    div:nth-child(odd) {
+      .icon_input {
+        @include icon_input;
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.lacation,
+.date,
+.person {
+  text-align: center;
+  border: 2px solid $green;
+  background-color: rgba(255, 255, 255, 0.617);
+  border-radius: $borderRadius_5;
+  height: 35px;
+  padding-left: 0px;
+  transition: all 0.7s ease;
+  &:focus {
+    background-color: $white;
+    opacity: 1;
+    outline: none;
+    position: relative;
+    z-index: 20;
+    &:hover {
+      background-color: $white;
+      opacity: 1;
+    }
+    &::placeholder {
+      opacity: 0.3;
+    }
+  }
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.734);
+    cursor: pointer;
+  }
+  @include md {
+    border: none;
+    border-radius: 0%;
+    padding-left: 10px;
+    .icon_input {
+      @include icon_input;
+      &:before {
+        display: none;
+      }
+    }
+  }
 }
 
 .btn_general {
-  width: 168px;
-  height: 49px;
-  border-radius: $borderRadius_10;
+  width: 130px;
+  height: 35px;
+  border-radius: $borderRadius_8;
   background-color: $green;
   border: none;
+  padding: 0;
 
   a {
     color: $white;
-    @include font(16px, 400, 180);
+    @include font(13px, 400, 180);
     @include flex-center;
-    gap: 20px;
+    justify-content: space-between;
+    margin: 0 9px;
+    img {
+      @include box(15px);
+    }
+  }
+  @include md {
+    width: 168px;
+    height: 49px;
+    border-radius: $borderRadius_10;
+    a {
+      font-size: 16px;
+      img {
+        @include box(24px);
+      }
+    }
   }
 }
