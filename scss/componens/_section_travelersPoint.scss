@@ -2,6 +2,7 @@
   margin-top: clamp(1.25rem, -0.417rem + 8.33vw, 6.25rem);
   padding: 0 clamp(0rem, -1.042rem + 5.21vw, 3.125rem);
   @include lg {
+    display: grid;
     grid-template-columns: 590px 1fr;
   }
 
@@ -22,13 +23,13 @@
   .item_1 {
     width: clamp(10.875rem, 3.732rem + 35.71vw, 17.125rem);
     height: clamp(21.75rem, 14.607rem + 35.71vw, 28rem);
-    background: url("./img/home/travels_point/img_1.png");
+    background: url("../img/home/travels_point/img1.png");
   }
   .item_2 {
     width: clamp(8.438rem, 2.723rem + 28.57vw, 13.438rem);
     height: clamp(14.5rem, 7.357rem + 35.71vw, 20.75rem);
-    background: url("./img/home/travels_point/img_2.png");
-    border-left: clamp(0.313rem, 0.104rem + 1.04vw, 0.938rem) solid $white; //!15px
+    background: url("../img/home/travels_point/img2.png");
+    border-left: clamp(0.313rem, 0.104rem + 1.04vw, 0.938rem) solid $white;
     position: absolute;
     bottom: 0;
     left: 43%;
@@ -36,9 +37,9 @@
   .item_3 {
     width: clamp(8.125rem, 3.625rem + 22.5vw, 12.063rem);
     height: clamp(13.75rem, 6.607rem + 35.71vw, 20rem);
-    border-left: clamp(0.313rem, 0.146rem + 0.83vw, 0.813rem) solid $white; //!13
-    border-bottom: clamp(0.313rem, 0.104rem + 1.04vw, 0.938rem) solid $white; //!15
-    background: url("./img/home/travels_point/img_3.png");
+    border-left: clamp(0.313rem, 0.146rem + 0.83vw, 0.813rem) solid $white;
+    border-bottom: clamp(0.313rem, 0.104rem + 1.04vw, 0.938rem) solid $white;
+    background: url("../img/home/travels_point/img3.png");
     position: absolute;
     right: 10px;
     top: 0;
@@ -56,16 +57,20 @@
       margin-top: 10px;
       color: $darkgreen;
       @include font(16px, 700, 180);
-      text-align: center;
-      @include lg {
-        text-align: left;
-      }
     }
     h2 {
       @include font(clamp(1.25rem, 1.083rem + 0.83vw, 1.75rem), 700, 120);
     }
     p {
       @include font(clamp(0.625rem, 0.5rem + 0.63vw, 1rem), 400, 180);
+    }
+    h5,
+    h2,
+    p {
+      text-align: center;
+      @include lg {
+        text-align: left;
+      }
     }
   }
   .statistic {

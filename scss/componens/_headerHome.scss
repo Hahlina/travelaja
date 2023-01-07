@@ -44,7 +44,7 @@
     display: inline-block;
     @include box(18px);
     border-radius: 50%;
-    background: url("./img/icons/poland.svg");
+    background: url("../img/icons/country.svg");
     @include cover-background;
     margin-right: 10px;
   }
