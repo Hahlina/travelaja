@@ -1,0 +1,13 @@
+.subHeader {
+  height: 250px;
+  width: 100%;
+  background: url("../src/assets/discover/header.png");
+  @include cover-background;
+  display: flex;
+  align-items: flex-end;
+  p {
+    @include font(33px, 700, 120);
+    color: $white;
+    margin: 50px;
+  }
+}

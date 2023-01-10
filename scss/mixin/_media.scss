@@ -3,6 +3,11 @@
     @content;
   }
 }
+@mixin sml {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
 @mixin md {
   @media (min-width: 768px) {
     @content;
@@ -29,4 +34,7 @@
   @media (min-width: 2560px) {
     @content;
   }
+}
+.li_drop {
+  position: relative;
 }

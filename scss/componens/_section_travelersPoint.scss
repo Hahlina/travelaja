@@ -23,12 +23,12 @@
   .item_1 {
     width: clamp(10.875rem, 3.732rem + 35.71vw, 17.125rem);
     height: clamp(21.75rem, 14.607rem + 35.71vw, 28rem);
-    background: url("../img/home/travels_point/img1.png");
+    background: url("../src/assets/home/travels_point/img1.png");
   }
   .item_2 {
     width: clamp(8.438rem, 2.723rem + 28.57vw, 13.438rem);
     height: clamp(14.5rem, 7.357rem + 35.71vw, 20.75rem);
-    background: url("../img/home/travels_point/img2.png");
+    background: url("../src/assets/home/travels_point/img2.png");
     border-left: clamp(0.313rem, 0.104rem + 1.04vw, 0.938rem) solid $white;
     position: absolute;
     bottom: 0;
@@ -39,7 +39,7 @@
     height: clamp(13.75rem, 6.607rem + 35.71vw, 20rem);
     border-left: clamp(0.313rem, 0.146rem + 0.83vw, 0.813rem) solid $white;
     border-bottom: clamp(0.313rem, 0.104rem + 1.04vw, 0.938rem) solid $white;
-    background: url("../img/home/travels_point/img3.png");
+    background: url("../src/assets/home/travels_point/img3.png");
     position: absolute;
     right: 10px;
     top: 0;

@@ -1,0 +1,58 @@
+.header_two {
+  height: 60px;
+  @include between;
+  align-items: center;
+  padding: 0 clamp(0.938rem, -2.344rem + 6.84vw, 3.125rem);
+  width: 100%;
+  .logo_two {
+    @include font(33px, 400, 120);
+    color: $darkgreen;
+  }
+  .nav_two {
+    display: none;
+    ul {
+      display: flex;
+      gap: clamp(1.25rem, -0.625rem + 3.91vw, 2.5rem);
+      li {
+        @include flex-center;
+      }
+    }
+    a {
+      color: $black;
+      @include font(16px, 400, 180);
+      &:hover {
+        color: $green;
+      }
+    }
+    @include md {
+      display: block;
+    }
+  }
+  .lang_two {
+    @include flex-center;
+    a {
+      color: $black;
+      @include flex-center;
+      @include font(16px, 700, 180);
+    }
+    a:before {
+      content: "";
+      display: inline-block;
+      @include box(18px);
+      border-radius: 50%;
+      background: url("../src/assets/icons/country.svg");
+      @include cover-background;
+      margin-right: 10px;
+    }
+    span {
+      display: block;
+      @include box(9px);
+      margin-left: 10px;
+      transform: rotate(45deg);
+      border-bottom: 2px solid $black;
+      border-right: 2px solid $black;
+      position: relative;
+      top: -2px;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+.footer {
+  margin-top: clamp(1.25rem, -0.417rem + 8.33vw, 6.25rem);
+  padding: 58px clamp(0.938rem, -2.344rem + 6.84vw, 3.125rem);
+  padding-bottom: 70px;
+  @include sml {
+    padding-bottom: 58px;
+  }
+  background-color: $darkgreen;
+  color: $white;
+  width: 100%;
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    @include sml {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+    }
+    gap: 20px;
+    margin-bottom: 35px;
+    span {
+      @include font(19px, 700, 180);
+      margin-bottom: 0px;
+      margin-top: 10px;
+      @include sml {
+        margin-bottom: 20px;
+      }
+      display: inline-block;
+      &:hover {
+        cursor: pointer;
+        color: $green;
+      }
+    }
+    @include lg {
+      @include between;
+    }
+  }
+  .travelaja_info {
+    text-align: center;
+    @include sml {
+      text-align: start;
+    }
+    width: clamp(17.5rem, 13.5rem + 20vw, 18.813rem);
+    h2 {
+      @include font(33px, 400, 120);
+      margin-bottom: 20px;
+    }
+    p {
+      @include font(16px, 400, 150);
+    }
+  }
+  ul li {
+    text-align: center;
+    @include sml {
+      text-align: left;
+    }
+    &:hover {
+      .drop {
+        position: absolute;
+        display: flex;
+        background-color: $green;
+        border-radius: 20px;
+        padding: 10px;
+        z-index: 3;
+        @include sml {
+          display: flex;
+          position: static;
+          background-color: transparent;
+          border-radius: 0px;
+          padding: 0;
+        }
+      }
+      .drop_links {
+        left: -95px;
+        width: 250px;
+      }
+      .drop_services {
+        left: -80px;
+        width: 250px;
+      }
+      .drop_contact {
+        left: -110px;
+        width: 300px;
+      }
+      .drop_links,
+      .drop_contact,
+      .drop_services {
+        @include sml {
+          width: fit-content;
+        }
+      }
+    }
+
+    @include sml {
+      .drop {
+        display: flex;
+      }
+    }
+  }
+
+  .drop {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    display: none;
+    a {
+      &:hover {
+        color: $darkgreen;
+        @include sml {
+          color: $green;
+        }
+      }
+    }
+  }
+
+  .social_networks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include lg {
+      align-items: flex-start;
+    }
+    p {
+      @include font(19px, 700, 180);
+      margin-bottom: 10px;
+    }
+  }
+
+  .img {
+    display: flex;
+    gap: 10px;
+  }
+}

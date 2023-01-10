@@ -1,5 +1,5 @@
 .general {
-  background: url("/img/home/background.png");
+  background: url("../src/assets/home/background.png");
   @include cover-background;
   width: 100%;
   height: 720px;
@@ -64,6 +64,11 @@
     }
     .person {
       width: 150px;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        display: none;
+        -webkit-appearance: none;
+      }
       @include md {
         width: 118px;
         border-left: 1px solid $black;
