@@ -1,8 +1,6 @@
 .subHeader {
   height: 250px;
   width: 100%;
-  background: url("../src/assets/discover/header.png");
-  @include cover-background;
   display: flex;
   align-items: flex-end;
   p {
@@ -10,4 +8,18 @@
     color: $white;
     margin: 50px;
   }
+}
+.subHeaderDiscover {
+  background: url("../src/assets/discover/header.png");
+  @include cover-background;
+}
+.subHeaderServices {
+  background: url("../src/assets/service/header.png");
+  @include cover-background;
+}
+.subHeaderNews {
+}
+.subHeaderAbout {
+}
+.subHeaderContact {
 }

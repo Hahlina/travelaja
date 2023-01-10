@@ -1,0 +1,43 @@
+.section_itemServices {
+  margin-top: clamp(1.25rem, -0.417rem + 8.33vw, 6.25rem);
+  padding: 0 clamp(0.938rem, -2.344rem + 6.84vw, 3.125rem);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.item {
+  text-align: center;
+  @include lg {
+    text-align: left;
+    width: clamp(12.5rem, -7.115rem + 30.77vw, 17.5rem);
+  }
+  width: 280px;
+
+  h3 {
+    @include font(19px, 700, 180);
+    margin: 10px 0px;
+  }
+  p {
+    @include font(16px, 400, 180);
+    margin-bottom: 10px;
+  }
+  .icon {
+    color: $black;
+    stroke-width: 2px;
+  }
+  .icon_4 {
+    color: $black;
+    stroke-width: 0px;
+  }
+}
+.btn_itemServices {
+  width: 119px;
+  height: 39px;
+  border-radius: 15px;
+  background-color: $green;
+  border: none;
+  a {
+    color: $white;
+  }
+}
