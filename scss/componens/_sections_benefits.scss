@@ -1,0 +1,52 @@
+._sections_benefits {
+  margin-top: clamp(1.25rem, -0.417rem + 8.33vw, 6.25rem);
+  padding: 0 clamp(0.938rem, -2.344rem + 6.84vw, 3.125rem);
+  text-align: center;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  h5 {
+    @include font(16px, 400, 180);
+  }
+  h2 {
+    @include font(33px, 700, 120);
+    margin-bottom: 36px;
+  }
+  .items_benefits {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .item_benefits {
+    display: flex;
+    @include sml {
+      width: clamp(17.5rem, -7.5rem + 39.06vw, 23.75rem);
+    }
+
+    gap: 14px;
+    text-align: left;
+    h3 {
+      @include font(28px, 700, 120);
+      margin-bottom: 10px;
+    }
+    p {
+      @include font(16px, 400, 180);
+      margin-bottom: 20px;
+    }
+    button {
+      width: 127px;
+      height: 39px;
+      background-color: $green;
+      border: none;
+      border-radius: $borderRadius_8;
+      a {
+        color: $white;
+      }
+    }
+  }
+  .img_benefits {
+  }
+  .text_block_benefits {
+  }
+}

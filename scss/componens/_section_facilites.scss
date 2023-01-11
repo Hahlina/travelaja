@@ -1,0 +1,82 @@
+._section_facilites {
+  margin-top: clamp(1.25rem, -0.417rem + 8.33vw, 6.25rem);
+  padding: 0 clamp(0.938rem, -2.344rem + 6.84vw, 3.125rem);
+  color: $white;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include md {
+    flex-wrap: nowrap;
+  }
+  gap: 20px;
+  background: url("/src/assets/service/facilities.png");
+  @include cover-background;
+  height: 100%;
+  @include l {
+    height: 550px;
+  }
+
+  .text_block {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include md {
+      width: 50%;
+      text-align: start;
+      display: block;
+      margin-top: 0;
+    }
+    h2 {
+      @include font(clamp(1.5rem, 1rem + 2.5vw, 3rem), 700, 120);
+      margin-bottom: 20px;
+    }
+    p {
+      @include font(16px, 400, 180);
+    }
+    button {
+      width: 127px;
+      height: 49px;
+      border-radius: $borderRadius_8;
+      border: none;
+      background-color: $green;
+      margin-top: 20px;
+      a {
+        color: $white;
+        @include font(16px, 700, 180);
+      }
+    }
+  }
+  .icon_block {
+    color: $black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    @include md {
+      width: 50%;
+      padding: 87px 0;
+    }
+    @include l {
+      padding: 0;
+    }
+  }
+  .icon {
+    width: clamp(8.438rem, -5.982rem + 29.35vw, 17.5rem);
+    height: clamp(8.75rem, 5.188rem + 7.42vw, 11.125rem);
+    background-color: $white;
+    border-radius: $borderRadius_15;
+    @include flex-column;
+    align-items: center;
+    padding-top: 24px;
+    h3 {
+      @include font(clamp(1.375rem, 1rem + 1.88vw, 2.5rem), 700, 120);
+    }
+    p {
+      @include font(16px, 500, 180);
+    }
+  }
+}

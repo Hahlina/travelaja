@@ -53,10 +53,10 @@
     display: flex;
     flex-direction: column-reverse;
     margin-top: clamp(0rem, -1.042rem + 5.21vw, 3.125rem);
+    align-items: center;
     @include l {
       flex-direction: column;
     }
-    align-items: center;
   }
   .map {
     margin-top: 20px;
@@ -73,13 +73,12 @@
   .aside {
     display: flex;
     flex-direction: column;
-
     margin-top: clamp(0rem, -1.271rem + 6.35vw, 3.813rem);
     p {
       @include between;
       @include l {
-        @include flex-center;
         gap: 120px;
+        justify-content: center;
       }
 
       @include font(19px, 400, 180);
@@ -111,6 +110,7 @@
       .place {
         @include font(12px, 700, 180);
         margin-top: 10px;
+        justify-content: flex-start;
       }
     }
     .btn_viewMore {

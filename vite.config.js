@@ -11,7 +11,8 @@ export default {
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        nested: resolve(__dirname, 'nested/discover.html'),
+        discover: resolve(__dirname, 'nested/discover.html'),
+        service: resolve(__dirname, 'nested/service.html')
       },
     },
   },

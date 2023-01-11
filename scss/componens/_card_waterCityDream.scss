@@ -1,0 +1,45 @@
+.section_card_waterCityDream {
+  margin-top: clamp(1.25rem, -0.417rem + 8.33vw, 6.25rem);
+  padding: 0 clamp(0.938rem, -2.344rem + 6.84vw, 3.125rem);
+  color: $white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .card_waterCityDream {
+    width: clamp(17.5rem, 15.417rem + 10.42vw, 23.75rem); //380
+    height: 263px;
+    background: url("../src/assets/service/nature_1.png");
+    border-radius: $borderRadius_10;
+    padding-left: 24px;
+    h2 {
+      @include font(23px, 700, 120);
+      padding-top: 28px;
+    }
+    p:nth-child(2) {
+      @include font(16px, 700, 180);
+    }
+    p:nth-child(3) {
+      @include font(16px, 400, 180);
+    }
+    &:nth-child(2) {
+      background: url("../src/assets/service/nature_2.png");
+    }
+    &:nth-child(3) {
+      background: url("../src/assets/service/nature_3.png");
+    }
+  }
+  .btn_card_waterCityDream {
+    margin-top: clamp(0.313rem, 0.045rem + 1.34vw, 1.25rem);
+    width: 127px;
+    height: 39px;
+    border-radius: $borderRadius_8;
+    border: 1px solid $green;
+    background-color: transparent;
+    a {
+      color: $white;
+      @include font(16px, 700, 180);
+    }
+  }
+}
