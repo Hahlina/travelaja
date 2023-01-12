@@ -1,0 +1,56 @@
+.section_ourTeams {
+  margin-top: clamp(1.25rem, -0.417rem + 8.33vw, 6.25rem);
+  padding: 0 clamp(0.938rem, -2.344rem + 6.84vw, 3.125rem);
+  color: $black;
+  text-align: center;
+  @include l {
+    text-align: left;
+  }
+  h2 {
+    @include font(28px, 700, 120);
+    margin-bottom: 10px;
+  }
+  P {
+    @include font(16px, 400, 180);
+  }
+
+  .team {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 45px;
+  }
+  .item {
+    width: 200px;
+    h5 {
+      @include font(19px, 400, 180);
+      margin-top: 10px;
+    }
+    &:nth-child(2) {
+      .img {
+        background: url("/src/assets/about_us/avatar_2.png");
+      }
+    }
+    &:nth-child(3) {
+      .img {
+        background: url("/src/assets/about_us/avatar_3.png");
+      }
+    }
+    &:nth-child(4) {
+      .img {
+        background: url("/src/assets/about_us/avatar_4.png");
+      }
+    }
+    &:nth-child(5) {
+      .img {
+        background: url("/src/assets/about_us/avatar_5.png");
+      }
+    }
+  }
+  .img {
+    height: 247px;
+    background: url("/src/assets/about_us/avatar_1.png");
+    border-radius: $borderRadius_15;
+  }
+}

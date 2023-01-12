@@ -1,0 +1,18 @@
+.section_aboutIcons {
+  margin-top: clamp(1.875rem, -0.729rem + 13.02vw, 9.688rem);
+  padding: 0 clamp(0.938rem, -2.344rem + 6.84vw, 3.125rem);
+  color: #a8a7ab;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  gap: 30px;
+
+  .item {
+    text-align: center;
+    p {
+      @include font(19px, 400, 180);
+      margin-top: 10px;
+    }
+  }
+}

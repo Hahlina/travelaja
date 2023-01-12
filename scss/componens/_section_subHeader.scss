@@ -3,6 +3,7 @@
   width: 100%;
   display: flex;
   align-items: flex-end;
+  margin-top: 60px;
   p {
     @include font(33px, 700, 120);
     color: $white;
@@ -18,8 +19,12 @@
   @include cover-background;
 }
 .subHeaderNews {
+  background: url("/src/assets/news/header.png");
+  @include cover-background;
 }
-.subHeaderAbout {
+.subHeaderAboutUs {
+  background: url("/src/assets/about_us/header.png");
+  @include cover-background;
 }
 .subHeaderContact {
 }

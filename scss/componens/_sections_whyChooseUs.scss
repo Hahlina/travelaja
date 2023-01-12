@@ -1,0 +1,53 @@
+.sections_whyChooseUs {
+  margin-top: clamp(1.25rem, -0.417rem + 8.33vw, 6.25rem);
+  padding: 0 clamp(0.938rem, -2.344rem + 6.84vw, 3.125rem);
+  text-align: center;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    @include font(28px, 700, 120);
+    margin-bottom: 10px;
+  }
+  p {
+    @include font(16px, 400, 180);
+  }
+
+  .preference {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    @include md {
+      flex-wrap: nowrap;
+    }
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+      @include font(clamp(1.25rem, 0.969rem + 0.59vw, 1.438rem), 400, 120);
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    &:nth-child(2) {
+      .icon {
+        background: url("/src/assets/about_us/date.svg");
+      }
+    }
+    &:nth-child(3) {
+      .icon {
+        background: url("https://api.iconify.design/ri/customer-service-2-line.svg?color=%2343b97f&width=128&height=128")
+          no-repeat center center / contain;
+      }
+    }
+  }
+  .icon {
+    width: 128px;
+    height: 128px;
+    background: url("https://api.iconify.design/bi/shield-check.svg?color=%2343b97f&width=128&height=128")
+      no-repeat center center / contain;
+  }
+}

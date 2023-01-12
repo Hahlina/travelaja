@@ -1,0 +1,40 @@
+.section_AboutTravelaja {
+  margin-top: clamp(1.25rem, -0.417rem + 8.33vw, 6.25rem);
+  padding: 0 clamp(0.938rem, -2.344rem + 6.84vw, 3.125rem);
+  color: $black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include md {
+    flex-wrap: nowrap;
+  }
+  align-items: center;
+  gap: 20px;
+
+  .texblock {
+    h3 {
+      @include font(28px, 700, 120);
+      margin-bottom: 20px;
+      text-align: center;
+      @include md {
+        text-align: left;
+      }
+    }
+    p {
+      @include font(16px, 400, 180);
+      &:nth-child(2) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .img {
+    img {
+      border-radius: $borderRadius_15;
+      width: 100%;
+      @include md {
+        width: clamp(17.5rem, 8.125rem + 19.53vw, 23.75rem);
+      }
+    }
+  }
+}

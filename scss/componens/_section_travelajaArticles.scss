@@ -1,0 +1,103 @@
+.section_travelajaArticles {
+  margin-top: clamp(1.25rem, -0.417rem + 8.33vw, 6.25rem);
+  padding: 0 clamp(0.938rem, -2.344rem + 6.84vw, 3.125rem);
+  color: $black;
+  text-align: center;
+
+  h2 {
+    @include font(28px, 400, 120);
+    margin-bottom: 10px;
+  }
+  p {
+    @include font(16px, 400, 180);
+    margin-bottom: 50px;
+  }
+  .nav_travelajaArticles {
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    a {
+      padding: 10px 20px;
+      @include font(16px, 700, 180);
+      &:hover {
+        color: $green;
+      }
+      &:focus {
+        background-color: $green;
+        color: $white;
+        border-radius: $borderRadius_5;
+      }
+    }
+  }
+  .card_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 54px;
+    gap: 20px;
+    text-align: left;
+    h4 {
+      margin-top: 20px;
+      @include font(19px, 400, 180);
+      color: black;
+    }
+    p {
+      @include font(16px, 400, 180);
+      margin: 0;
+    }
+  }
+  .card {
+    width: clamp(17.5rem, -1.548rem + 95.24vw, 23.75rem);
+    &:nth-child(2) {
+      .img {
+        background: url("/src/assets/news/nature_2.png");
+      }
+    }
+    &:nth-child(3) {
+      .img {
+        background: url("/src/assets/news/nature_3.png");
+      }
+    }
+    &:nth-child(4) {
+      .img {
+        background: url("/src/assets/news/nature_4.png");
+      }
+    }
+    &:nth-child(5) {
+      .img {
+        background: url("/src/assets/news/nature_5.png");
+      }
+    }
+    &:nth-child(6) {
+      .img {
+        background: url("/src/assets/news/nature_6.png");
+      }
+    }
+    &:nth-child(7) {
+      .img {
+        background: url("/src/assets/news/nature_7.png");
+      }
+    }
+    &:nth-child(8) {
+      .img {
+        background: url("/src/assets/news/nature_8.png");
+      }
+    }
+    &:nth-child(9) {
+      .img {
+        background: url("/src/assets/news/nature_9.png");
+      }
+    }
+  }
+  .img {
+    height: 331px;
+    min-width: 100%;
+    background: url("/src/assets/news/nature_1.png");
+    border-radius: $borderRadius_10;
+    @include cover-background;
+  }
+}
