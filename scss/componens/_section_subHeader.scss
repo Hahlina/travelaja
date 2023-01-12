@@ -27,4 +27,6 @@
   @include cover-background;
 }
 .subHeaderContact {
+  background: url("/src/assets/contact/header.png");
+  @include cover-background;
 }
