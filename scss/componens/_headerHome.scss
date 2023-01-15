@@ -11,6 +11,9 @@
   .logo {
     @include font(33px, 400, 120);
     color: $white;
+    &:hover {
+      color: $green;
+    }
   }
 
   .nav {
@@ -24,7 +27,7 @@
     left: -100%;
     padding-top: 50px;
     transition: all 0.3s ease-in-out;
-
+    @include bottom_hover;
     &.overlay {
       left: 0;
       padding-top: 50px;
@@ -46,9 +49,6 @@
     a {
       color: $white;
       @include font(16px, 400, 180);
-      &:hover {
-        font-weight: 700;
-      }
     }
     @include md {
       position: static;
@@ -72,10 +72,14 @@
 
   .lang {
     @include flex-center;
+    height: 15px;
     a {
       color: $white;
       @include flex-center;
       @include font(16px, 700, 180);
+      &:hover {
+        color: $green;
+      }
     }
     a:before {
       content: "";
@@ -95,9 +99,46 @@
       border-right: 2px solid $white;
       position: relative;
       top: -2px;
+      transition: transform 0.5s ease;
+    }
+    .lang_sabList {
+      position: absolute;
+      display: none;
+
+      a {
+        justify-content: start;
+      }
+      a:before {
+        background: url("../src/assets/icons/united.svg");
+        @include cover-background;
+        @include box(16px);
+        margin-left: 2px;
+      }
+
+      li:nth-child(2) a:before {
+        background: url("../src/assets/icons/italy.svg");
+        @include cover-background;
+      }
+      li:nth-child(3) a:before {
+        background: url("../src/assets/icons/ukraine.svg");
+        @include cover-background;
+      }
+      li:nth-child(4) a:before {
+        background: url("../src/assets/icons/germany.svg");
+        @include cover-background;
+      }
+    }
+  }
+  .lang:hover {
+    .lang_sabList {
+      display: block;
+    }
+    span {
+      transform: rotate(225deg);
     }
   }
 }
+
 #burger-menu {
   display: block;
   @include md {

@@ -7,22 +7,12 @@ let isMobile = {
 	any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
 };
 		let body=document.querySelector('body');
-if(isMobile.any()){
-		body.classList.add('_touch');
+		if(isMobile.any()){
+		body.classList.add('touch');
 	
-}else{
-	body.classList.add('_pc');
+	}
+else{
+	body.classList.add('pc');
 }
-
-
-var burgerMenu = document.getElementById('burger-menu');
-
-var overlay = document.querySelector('.nav');
-burgerMenu.addEventListener('click', function() {
-	document.body.classList.toggle('_lock');
-  this.classList.toggle("close");
-  overlay.classList.toggle("overlay");
-});
-
 
 

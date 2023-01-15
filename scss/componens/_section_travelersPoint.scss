@@ -24,6 +24,7 @@
     width: clamp(10.875rem, 3.732rem + 35.71vw, 17.125rem);
     height: clamp(21.75rem, 14.607rem + 35.71vw, 28rem);
     background: url("../src/assets/home/travels_point/img1.png");
+    position: relative;
   }
   .item_2 {
     width: clamp(8.438rem, 2.723rem + 28.57vw, 13.438rem);
@@ -47,6 +48,11 @@
   .item {
     border-radius: $borderRadius_95;
     @include cover-background;
+    transition: transform 0.5s linear;
+    &:hover {
+      transform: scale(1.1);
+      z-index: 20;
+    }
   }
   .text_block {
     @include flex-column;

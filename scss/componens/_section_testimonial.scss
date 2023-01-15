@@ -22,6 +22,8 @@
     width: clamp(18.75rem, 17.083rem + 8.33vw, 23.75rem);
     height: clamp(10.188rem, 9.271rem + 4.58vw, 12.938rem);
     padding: 10px;
+    border-radius: $borderRadius_10;
+
     @include flex-column;
     justify-content: space-between;
     transition: background 0.5s linear;

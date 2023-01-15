@@ -13,10 +13,14 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    @include sml {
+    @include md {
       flex-direction: row;
       align-items: flex-start;
-      justify-content: space-around;
+      justify-content: center;
+      gap: 80px;
+    }
+    @include lg {
+      gap: 0;
     }
     gap: 20px;
     margin-bottom: 35px;
@@ -24,7 +28,7 @@
       @include font(19px, 700, 180);
       margin-bottom: 0px;
       margin-top: 10px;
-      @include sml {
+      @include md {
         margin-bottom: 20px;
       }
       display: inline-block;
@@ -37,15 +41,28 @@
       @include between;
     }
   }
+  .footer_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    @include lg {
+      display: contents;
+    }
+  }
   .travelaja_info {
     text-align: center;
-    @include sml {
+    @include md {
       text-align: start;
     }
     width: clamp(17.5rem, 13.5rem + 20vw, 18.813rem);
     h2 {
       @include font(33px, 400, 120);
       margin-bottom: 20px;
+      a {
+        &:hover {
+          color: $green;
+        }
+      }
     }
     p {
       @include font(16px, 400, 150);
@@ -64,7 +81,7 @@
         border-radius: 20px;
         padding: 10px;
         z-index: 3;
-        @include sml {
+        @include lg {
           display: flex;
           position: static;
           background-color: transparent;
@@ -75,25 +92,39 @@
       .drop_links {
         left: -95px;
         width: 250px;
+        @include sml {
+          width: 130px;
+          left: -10px;
+          top: 45px;
+        }
       }
       .drop_services {
         left: -80px;
         width: 250px;
+        @include sml {
+          width: 190px;
+          left: -10px;
+          top: 45px;
+        }
       }
       .drop_contact {
         left: -110px;
         width: 300px;
-      }
-      .drop_links,
-      .drop_contact,
-      .drop_services {
         @include sml {
+          left: -90px;
+          top: 45px;
+        }
+      }
+      @include lg {
+        .drop_links,
+        .drop_services,
+        .drop_contact {
           width: fit-content;
         }
       }
     }
 
-    @include sml {
+    @include lg {
       .drop {
         display: flex;
       }
@@ -114,6 +145,9 @@
         }
       }
     }
+  }
+  .li_drop {
+    position: relative;
   }
 
   .social_networks {
@@ -137,16 +171,3 @@
     display: none;
   }
 }
-// body._touch {
-//   .menu_arow {
-//     display: inline-block;
-//     border-left: 5px solid transparent;
-//     border-right: 5px solid transparent;
-//     border-top: 10px solid #fff;
-//     width: 0px;
-//     height: 0px;
-//     margin: 0;
-//     padding: 0;
-//     transition: transform 0.3s ease;
-//   }
-// }

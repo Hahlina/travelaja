@@ -46,7 +46,7 @@
     }
 
     .lacation {
-      width: 250px;
+      width: 300px;
       @include md {
         width: 167px;
       }
@@ -56,14 +56,14 @@
     }
 
     .date {
-      width: 200px;
+      width: 250px;
       @include md {
         width: 118px;
         border-left: 1px solid $black;
       }
     }
     .person {
-      width: 150px;
+      width: 200px;
       &::-webkit-outer-spin-button,
       &::-webkit-inner-spin-button {
         display: none;
@@ -122,7 +122,7 @@
     border: 2px solid $green;
     background-color: rgba(255, 255, 255, 0.617);
     border-radius: $borderRadius_5;
-    height: 35px;
+    height: 45px;
     padding-left: 0px;
     &:focus {
       background-color: $white;
@@ -156,16 +156,19 @@
   }
 
   .btn_general {
-    width: 130px;
-    height: 35px;
+    width: 150px;
+    height: 45px;
     border-radius: $borderRadius_8;
     background-color: $green;
     border: none;
     padding: 0;
-
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    @include btn_animated;
     a {
       color: $white;
-      @include font(13px, 400, 180);
+      @include font(16px, 400, 180);
       @include flex-center;
       justify-content: space-between;
       margin: 0 9px;
@@ -185,5 +188,4 @@
       }
     }
   }
-  // display: none;
 }
