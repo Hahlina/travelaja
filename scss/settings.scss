@@ -40,3 +40,6 @@ address {
   @include flex-column;
   align-items: center;
 }
+body._lock {
+  overflow: hidden;
+}

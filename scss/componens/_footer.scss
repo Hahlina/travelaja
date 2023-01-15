@@ -133,4 +133,20 @@
     display: flex;
     gap: 10px;
   }
+  .menu_arow {
+    display: none;
+  }
 }
+// body._touch {
+//   .menu_arow {
+//     display: inline-block;
+//     border-left: 5px solid transparent;
+//     border-right: 5px solid transparent;
+//     border-top: 10px solid #fff;
+//     width: 0px;
+//     height: 0px;
+//     margin: 0;
+//     padding: 0;
+//     transition: transform 0.3s ease;
+//   }
+// }
