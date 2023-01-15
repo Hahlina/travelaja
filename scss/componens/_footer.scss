@@ -58,10 +58,8 @@
     h2 {
       @include font(33px, 400, 120);
       margin-bottom: 20px;
-      a {
-        &:hover {
-          color: $green;
-        }
+      a:hover {
+        color: $green;
       }
     }
     p {
@@ -81,6 +79,7 @@
         border-radius: 20px;
         padding: 10px;
         z-index: 3;
+
         @include lg {
           display: flex;
           position: static;
@@ -88,6 +87,9 @@
           border-radius: 0px;
           padding: 0;
         }
+      }
+      .arrow {
+        transform: rotate(225deg);
       }
       .drop_links {
         left: -95px;
@@ -140,7 +142,7 @@
     a {
       &:hover {
         color: $darkgreen;
-        @include sml {
+        @include lg {
           color: $green;
         }
       }
@@ -166,8 +168,22 @@
   .img {
     display: flex;
     gap: 10px;
+    cursor: pointer;
+    img:hover {
+      filter: brightness(0) saturate(100%) invert(62%) sepia(26%) saturate(896%)
+        hue-rotate(98deg) brightness(96%) contrast(85%);
+      transform: scale(1.1);
+    }
   }
-  .menu_arow {
-    display: none;
+  .arrow {
+    display: block;
+    @include box(9px);
+    margin-left: 10px;
+    transform: rotate(45deg);
+    border-bottom: 3px solid $white;
+    border-right: 3px solid $white;
+    position: absolute;
+    transition: all 0.5s ease;
+    top: 10px;
   }
 }
