@@ -6,6 +6,7 @@
   padding: 0 clamp(0.938rem, -2.344rem + 6.84vw, 3.125rem);
   width: 100%;
   position: fixed;
+  z-index: 100;
   .logo_two {
     @include font(33px, 400, 120);
     color: $darkgreen;
@@ -21,7 +22,8 @@
     top: 0;
     left: -100%;
     padding-top: 50px;
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+
     @include bottom_hover;
     &.overlay {
       left: 0;

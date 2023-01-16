@@ -10,7 +10,7 @@
     flex-wrap: nowrap;
   }
   gap: 20px;
-  background: url("/src/assets/service/facilities.png");
+  background: url("/src/assets/service/facilities.webp");
   @include cover-background;
   height: 100%;
   @include l {
@@ -43,6 +43,10 @@
       border: none;
       background-color: $green;
       margin-top: 20px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      @include btn_animated;
       a {
         color: $white;
         @include font(16px, 700, 180);
@@ -72,6 +76,12 @@
     @include flex-column;
     align-items: center;
     padding-top: 24px;
+    cursor: pointer;
+    transition: transform 0.3s linear;
+    &:hover {
+      background-color: $green;
+      transform: scale(1.05);
+    }
     h3 {
       @include font(clamp(1.375rem, 1rem + 1.88vw, 2.5rem), 700, 120);
     }

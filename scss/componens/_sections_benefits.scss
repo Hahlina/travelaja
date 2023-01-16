@@ -40,6 +40,10 @@
       background-color: $green;
       border: none;
       border-radius: $borderRadius_8;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      @include btn_animated;
       a {
         color: $white;
       }

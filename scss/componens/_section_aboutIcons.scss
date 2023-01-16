@@ -9,10 +9,15 @@
   gap: 30px;
 
   .item {
+    cursor: pointer;
     text-align: center;
     p {
       @include font(19px, 400, 180);
       margin-top: 10px;
+    }
+    iconify-icon:hover {
+      filter: brightness(0) saturate(100%) invert(63%) sepia(52%) saturate(475%)
+        hue-rotate(98deg) brightness(90%) contrast(85%);
     }
   }
 }

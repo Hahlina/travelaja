@@ -54,49 +54,49 @@
     width: clamp(17.5rem, -1.548rem + 95.24vw, 23.75rem);
     &:nth-child(2) {
       .img {
-        background: url("/src/assets/news/nature_2.png");
+        background: url("/src/assets/news/nature_2.webp");
       }
     }
     &:nth-child(3) {
       .img {
-        background: url("/src/assets/news/nature_3.png");
+        background: url("/src/assets/news/nature_3.webp");
       }
     }
     &:nth-child(4) {
       .img {
-        background: url("/src/assets/news/nature_4.png");
+        background: url("/src/assets/news/nature_4.webp");
       }
     }
     &:nth-child(5) {
       .img {
-        background: url("/src/assets/news/nature_5.png");
+        background: url("/src/assets/news/nature_5.webp");
       }
     }
     &:nth-child(6) {
       .img {
-        background: url("/src/assets/news/nature_6.png");
+        background: url("/src/assets/news/nature_6.webp");
       }
     }
     &:nth-child(7) {
       .img {
-        background: url("/src/assets/news/nature_7.png");
+        background: url("/src/assets/news/nature_7.webp");
       }
     }
     &:nth-child(8) {
       .img {
-        background: url("/src/assets/news/nature_8.png");
+        background: url("/src/assets/news/nature_8.webp");
       }
     }
     &:nth-child(9) {
       .img {
-        background: url("/src/assets/news/nature_9.png");
+        background: url("/src/assets/news/nature_9.webp");
       }
     }
   }
   .img {
     height: 331px;
     min-width: 100%;
-    background: url("/src/assets/news/nature_1.png");
+    background: url("/src/assets/news/nature_1.webp");
     border-radius: $borderRadius_10;
     @include cover-background;
   }

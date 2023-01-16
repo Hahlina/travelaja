@@ -23,34 +23,39 @@
   }
   .item {
     width: 200px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.08);
+    }
     h5 {
       @include font(19px, 400, 180);
       margin-top: 10px;
     }
     &:nth-child(2) {
       .img {
-        background: url("/src/assets/about_us/avatar_2.png");
+        background: url("/src/assets/about_us/avatar_2.webp");
       }
     }
     &:nth-child(3) {
       .img {
-        background: url("/src/assets/about_us/avatar_3.png");
+        background: url("/src/assets/about_us/avatar_3.webp");
       }
     }
     &:nth-child(4) {
       .img {
-        background: url("/src/assets/about_us/avatar_4.png");
+        background: url("/src/assets/about_us/avatar_4.webp");
       }
     }
     &:nth-child(5) {
       .img {
-        background: url("/src/assets/about_us/avatar_5.png");
+        background: url("/src/assets/about_us/avatar_5.webp");
       }
     }
   }
   .img {
     height: 247px;
-    background: url("/src/assets/about_us/avatar_1.png");
+    background: url("/src/assets/about_us/avatar_1.webp");
     border-radius: $borderRadius_15;
   }
 }

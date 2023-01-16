@@ -11,22 +11,22 @@
   }
 }
 .subHeaderDiscover {
-  background: url("../src/assets/discover/header.png");
+  background: url("../src/assets/discover/header.webp");
   @include cover-background;
 }
 .subHeaderServices {
-  background: url("../src/assets/service/header.png");
+  background: url("../src/assets/service/header.webp");
   @include cover-background;
 }
 .subHeaderNews {
-  background: url("/src/assets/news/header.png");
+  background: url("/src/assets/news/header.webp");
   @include cover-background;
 }
 .subHeaderAboutUs {
-  background: url("/src/assets/about_us/header.png");
+  background: url("/src/assets/about_us/header.webp");
   @include cover-background;
 }
 .subHeaderContact {
-  background: url("/src/assets/contact/header.png");
+  background: url("/src/assets/contact/header.webp");
   @include cover-background;
 }

@@ -38,6 +38,10 @@
     border-radius: 15px;
     background-color: $green;
     border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    @include btn_animated;
     a {
       color: $white;
     }

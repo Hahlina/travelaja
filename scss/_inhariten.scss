@@ -26,11 +26,11 @@
       transform-origin: right;
       transition: transform 0.5s;
     }
-
-    &:hover {
-      color: $darkgreen;
+    @include md {
+      &:hover {
+        color: $darkgreen;
+      }
     }
-
     &:hover::after {
       transform: scaleX(1);
       transform-origin: left;

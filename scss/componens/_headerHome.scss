@@ -11,6 +11,7 @@
   .logo {
     @include font(33px, 400, 120);
     color: $white;
+
     &:hover {
       color: $green;
     }
