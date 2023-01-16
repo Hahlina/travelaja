@@ -92,7 +92,7 @@
         transform: rotate(225deg);
       }
       .drop_links {
-        left: -95px;
+        left: -80px;
         width: 250px;
         @include sml {
           width: 130px;
@@ -166,6 +166,9 @@
   }
 
   .img {
+    img {
+      @include box(24px);
+    }
     display: flex;
     gap: 10px;
     cursor: pointer;
@@ -183,7 +186,11 @@
     border-bottom: 3px solid $white;
     border-right: 3px solid $white;
     position: absolute;
-    transition: all 0.5s ease;
+    transition: transform 0.5s ease;
     top: 10px;
+    @include lg {
+      display: none;
+      visibility: hidden;
+    }
   }
 }
