@@ -100,9 +100,18 @@
     .lang_sabList {
       position: absolute;
       display: none;
+      background-color: $white;
+      border-radius: 8px;
+      width: 70px;
+      padding-left: 5px;
+      margin-left: -5px;
 
       a {
         justify-content: start;
+        color: $black;
+        &:hover {
+          color: $green;
+        }
       }
       a:before {
         background: url("../src/assets/icons/united.svg");

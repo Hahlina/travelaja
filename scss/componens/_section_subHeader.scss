@@ -5,28 +5,68 @@
   align-items: flex-end;
   margin-top: 60px;
   p {
-    @include font(33px, 700, 120);
+    @include font(clamp(1.5rem, 1.313rem + 0.94vw, 2.063rem), 700, 120);
     color: $white;
-    margin: 50px;
+    margin: clamp(0.938rem, 0.208rem + 3.65vw, 3.125rem);
   }
 }
 .subHeaderDiscover {
-  background: url("../src/assets/discover/header.webp");
+  background: url("../src/assets/discover/header768.jpg");
   @include cover-background;
+  @include md {
+    background: url("../src/assets/discover/header1440.jpg");
+    @include cover-background;
+  }
+  @include xl {
+    background: url("../src/assets/discover/header4k.jpg");
+    @include cover-background;
+  }
 }
 .subHeaderServices {
-  background: url("../src/assets/service/header.webp");
+  background: url("../src/assets/service/header768.webp");
   @include cover-background;
+  @include md {
+    background: url("../src/assets/service/header1440.webp");
+    @include cover-background;
+  }
+  @include xl {
+    background: url("../src/assets/service/header4k.webp");
+    @include cover-background;
+  }
 }
 .subHeaderNews {
-  background: url("/src/assets/news/header.webp");
+  background: url("/src/assets/news/header768.jpg");
   @include cover-background;
+  @include md {
+    background: url("../src/assets/news/header1440.jpg");
+    @include cover-background;
+  }
+  @include xl {
+    background: url("../src/assets/news/header4k.jpg");
+    @include cover-background;
+  }
 }
 .subHeaderAboutUs {
-  background: url("/src/assets/about_us/header.webp");
+  background: url("/src/assets/about_us/header768.jpg");
   @include cover-background;
+  @include md {
+    background: url("../src/assets/about_us/header1440.jpg");
+    @include cover-background;
+  }
+  @include xl {
+    background: url("../src/assets/about_us/header4k.jpg");
+    @include cover-background;
+  }
 }
 .subHeaderContact {
-  background: url("/src/assets/contact/header.webp");
+  background: url("/src/assets/contact/header768.jpg");
   @include cover-background;
+  @include md {
+    background: url("../src/assets/contact/header1440.jpg");
+    @include cover-background;
+  }
+  @include xl {
+    background: url("../src/assets/contact/header4k.jpg");
+    @include cover-background;
+  }
 }

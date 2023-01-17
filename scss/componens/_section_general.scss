@@ -30,7 +30,7 @@
 
     @include md {
       padding: 9px 11px;
-      width: clamp(43.75rem, -9.583rem + 111.11vw, 48.75rem); //768
+      width: clamp(43.75rem, -9.583rem + 111.11vw, 48.75rem);
       height: 67px; //67
       @include between;
       flex-direction: row;
@@ -124,6 +124,7 @@
     border-radius: $borderRadius_5;
     height: 45px;
     padding-left: 0px;
+    caret-color: $green;
     &:focus {
       background-color: $white;
       opacity: 1;
@@ -135,7 +136,7 @@
         opacity: 1;
       }
       &::placeholder {
-        opacity: 0.3;
+        opacity: 0.2;
       }
     }
     &:hover {
@@ -154,7 +155,15 @@
       }
     }
   }
-
+  .lacation {
+    &:focus {
+      text-align: left;
+      padding-left: 20px;
+    }
+    @include md {
+      text-align: left;
+    }
+  }
   .btn_general {
     width: 150px;
     height: 45px;

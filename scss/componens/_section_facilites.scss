@@ -77,7 +77,8 @@
     align-items: center;
     padding-top: 24px;
     cursor: pointer;
-    transition: transform 0.3s linear;
+    transition: transform 0.3s linear, background-color 0.3s linear;
+
     &:hover {
       background-color: $green;
       transform: scale(1.05);

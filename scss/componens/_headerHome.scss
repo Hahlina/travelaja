@@ -29,6 +29,13 @@
     padding-top: 50px;
     transition: all 0.3s ease-in-out;
     @include bottom_hover;
+    a {
+      transition: transform 0.5s ease;
+    }
+    a:hover {
+      transform: scale(1.25);
+      color: rgb(255, 255, 255);
+    }
     &.overlay {
       left: 0;
       padding-top: 50px;
@@ -105,9 +112,17 @@
     .lang_sabList {
       position: absolute;
       display: none;
-
+      background-color: $white;
+      border-radius: 8px;
+      width: 70px;
+      padding-left: 5px;
+      margin-left: -5px;
       a {
         justify-content: start;
+        color: $black;
+        &:hover {
+          color: $green;
+        }
       }
       a:before {
         background: url("../src/assets/icons/united.svg");

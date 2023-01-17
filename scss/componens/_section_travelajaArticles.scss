@@ -49,9 +49,14 @@
       @include font(16px, 400, 180);
       margin: 0;
     }
+    h4:hover,
+    p:hover {
+      color: $green;
+    }
   }
   .card {
     width: clamp(17.5rem, -1.548rem + 95.24vw, 23.75rem);
+
     &:nth-child(2) {
       .img {
         background: url("/src/assets/news/nature_2.webp");
@@ -99,5 +104,9 @@
     background: url("/src/assets/news/nature_1.webp");
     border-radius: $borderRadius_10;
     @include cover-background;
+    transition: transform 0.5s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
