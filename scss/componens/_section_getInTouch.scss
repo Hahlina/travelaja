@@ -96,6 +96,7 @@
     justify-content: center;
     @include l {
       justify-content: flex-start;
+      flex-wrap: nowrap;
     }
     div {
       display: flex;
